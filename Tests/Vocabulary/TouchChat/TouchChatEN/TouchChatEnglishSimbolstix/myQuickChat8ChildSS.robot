@@ -17,7 +17,7 @@ Validate "myQuickChat 8 Child SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix vocabularies    ${myQuickChat8ChildSS}    ${page_down_button}
+    Select vocabulary    name:English    name:SymbolStix    ${page_down_button}    ${myQuickChat8ChildSS}
 
 Assertions for "myQuickChat 8 Child SS" vocabulary
     Check to see if the user exist

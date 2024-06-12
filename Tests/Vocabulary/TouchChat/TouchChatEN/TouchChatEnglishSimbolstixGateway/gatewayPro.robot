@@ -17,13 +17,13 @@ Validate "Gateway Pro" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&Gateway vocabularies    ${gatewayPro}    ${page_down_button}
+    Select vocabulary    name:English    name:SymbolStix    name:Gateway    ${page_down_button}    ${gatewayPro}
 
 Assertions for "Gateway Pro" vocabulary
     # Check to see if there is a picture of the vocabulary icons - Gateway Pro
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    Questions
-    Click On Button With Text    ${text}    gatewayPro\\questions.png    0.6
+    ${text}    Set Variable    Questions
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\gatewayPro\\questions.png    0.6
 
     Check to see if the user exist
 

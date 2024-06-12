@@ -17,13 +17,13 @@ Validate "4-Basic SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix vocabularies    ${4BasicSS}
+    Select vocabulary    name:English    name:SymbolStix    ${4BasicSS}
 
 Assertions for "4-Basic SS" vocabulary
     # Click on a button's text - 4-Basic SS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    I want
-    Click On Button With Text    ${text}    4BasicSS\\iWant.png    0.6
+    ${text}    Set Variable    I want
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\4BasicSS\\iWant.png    0.6
     ${message}=    RPA.Windows.Get Value    id:1000
     Should Contain    ${message}    I want
 

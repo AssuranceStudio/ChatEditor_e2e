@@ -17,13 +17,13 @@ Validate "Gateway 40 Text" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&Gateway vocabularies    ${gateway40Text}
+    Select vocabulary    name:English    name:SymbolStix    name:Gateway    ${gateway40Text}
 
 Assertions for "Gateway 40 Text" vocabulary
     # Check to see if there is a picture of the vocabulary icons - Gateway 40 Text
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    Questions
-    Click On Button With Text    ${text}    gateway40Text\\questions.png    0.6
+    ${text}    Set Variable    Questions
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\gateway40Text\\questions.png    0.6
 
     Check to see if the user exist
 

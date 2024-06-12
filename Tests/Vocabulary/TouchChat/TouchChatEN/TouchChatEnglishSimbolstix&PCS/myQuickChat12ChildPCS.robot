@@ -17,13 +17,13 @@ Validate "myQuickChat 12 Child PCS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&PCS vocabularies    ${myQuickChat12ChildPCS}    ${page_down_button}
+    Select vocabulary    name:English    name:PCS    ${page_down_button}    ${myQuickChat12ChildPCS}
 
 Assertions for "myQuickChat 12 Child PCS" vocabulary
     # Click on a button's text - myQuickChat 12 Child PCS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    QuickChat 1
-    Click On Button With Text    ${text}    myQuickChat12ChildPCS\\quickchat1.png    0.6
+    ${text}    Set Variable    QuickChat 1
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\myQuickChat12ChildPCS\\quickchat1.png    0.6
 
     Check to see if the user exist
 

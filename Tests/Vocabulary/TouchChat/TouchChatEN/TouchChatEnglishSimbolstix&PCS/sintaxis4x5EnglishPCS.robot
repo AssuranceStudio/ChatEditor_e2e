@@ -17,13 +17,13 @@ Validate "sintaxis 4x5 English PCS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&PCS vocabularies    ${sintaxis4x5EnglishPCS}    ${page_down_button}
+    Select vocabulary    name:English    name:PCS    ${page_down_button}    ${sintaxis4x5EnglishPCS}
 
 Assertions for "sintaxis 4x5 English PCS" vocabulary
     # Click on a button's text - sintaxis 4x5 English PCS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    Places
-    Click On Button With Text    ${text}    sintaxis4x5EnglishPCS\\places.png    0.6
+    ${text}    Set Variable    Places
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\sintaxis4x5EnglishPCS\\places.png    0.6
 
     Check to see if the user exist
 

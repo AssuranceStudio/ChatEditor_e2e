@@ -17,7 +17,7 @@ Validate "myCore PCS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&PCS vocabularies    ${myCorePCS}    ${page_down_button}
+    Select vocabulary    name:English    name:PCS    ${page_down_button}    ${myCorePCS}
 
 Assertions for "myCore PCS" vocabulary
     Check to see if the user exist

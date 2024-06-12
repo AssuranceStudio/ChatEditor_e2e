@@ -17,13 +17,13 @@ Validate "Communication Journey Aphasia UK SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix vocabularies    ${communicationJourneyAphasiaUKSS}
+    Select vocabulary    name:English    name:SymbolStix    ${communicationJourneyAphasiaUKSS}
 
 Assertions for "Communication Journey Aphasia UK SS" vocabulary
     # Click on a button's text - Communication Journey Aphasia UK SS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    Things
-    Click On Button With Text    ${text}    communicationJourneyAphasiaUKSS\\things.png    0.6
+    ${text}    Set Variable    Things
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\communicationJourneyAphasiaUKSS\\things.png    0.6
 
     Check to see if the user exist
 

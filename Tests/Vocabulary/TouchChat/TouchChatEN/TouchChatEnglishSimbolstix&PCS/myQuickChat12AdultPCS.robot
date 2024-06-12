@@ -17,13 +17,13 @@ Validate "myQuickChat 12 Adult PCS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&PCS vocabularies    ${myQuickChat12AdultPCS}    ${page_down_button}
+    Select vocabulary    name:English    name:PCS    ${page_down_button}    ${myQuickChat12AdultPCS}
 
 Assertions for "myQuickChat 12 Adult PCS" vocabulary
     # Click on a button's text - myQuickChat 12 Adult PCS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    QuickChat 1
-    Click On Button With Text    ${text}    myQuickChat12AdultPCS\\quickchat1.png    0.6
+    ${text}    Set Variable    QuickChat 1
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\myQuickChat12AdultPCS\\quickchat1.png    0.6
 
     Check to see if the user exist
 

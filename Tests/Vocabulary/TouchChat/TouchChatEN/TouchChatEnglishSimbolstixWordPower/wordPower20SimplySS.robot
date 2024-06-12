@@ -17,13 +17,13 @@ Validate "WordPower20 Simply SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&WordPower vocabularies    ${wordPower20SimplySS}
+    Select vocabulary    name:English    name:SymbolStix    name:WordPower    ${wordPower20SimplySS}
 
 Assertions for "WordPower20 Simply SS" vocabulary
     # Click on a button's text - WordPower20 Simply SS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    I
-    Click On Button With Text    ${text}    wordPower20SimplySS\\i.png    0.6
+    ${text}    Set Variable    I
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\wordPower20SimplySS\\i.png    0.6
     ${message}=    RPA.Windows.Get Value    id:1000
     Should Contain    ${message}    I
 

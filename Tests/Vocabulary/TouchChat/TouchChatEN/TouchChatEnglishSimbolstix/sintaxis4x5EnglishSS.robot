@@ -17,7 +17,7 @@ Validate "sintaxis 4x5 English SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix vocabularies    ${sintaxis4x5EnglishSS}    ${page_down_button}
+    Select vocabulary    name:English    name:SymbolStix    ${page_down_button}    ${sintaxis4x5EnglishSS}
 
 Assertions for "sintaxis 4x5 English SS" vocabulary
     Check to see if the user exist

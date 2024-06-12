@@ -17,13 +17,13 @@ Validate "4-Basic PCS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&PCS vocabularies    ${4BasicPCS}
+    Select vocabulary    name:English    name:PCS    ${4BasicPCS}
 
 Assertions for "4-Basic PCS" vocabulary
     # Click on a button's text - 4-Basic PCS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    I want
-    Click On Button With Text    ${text}    4BasicPCS\\iWant.png    0.6
+    ${text}    Set Variable    I want
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\4BasicPCS\\iWant.png    0.6
     ${message}=    RPA.Windows.Get Value    id:1000
     Should Contain    ${message}    I want
 

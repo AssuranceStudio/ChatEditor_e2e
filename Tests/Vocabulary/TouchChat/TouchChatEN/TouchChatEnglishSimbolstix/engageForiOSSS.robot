@@ -17,13 +17,13 @@ Validate "Engage for iOS SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix vocabularies    ${engageForiOSSS}
+    Select vocabulary    name:English    name:SymbolStix    ${engageForiOSSS}
 
 Assertions for "Engage for iOS SS" vocabulary
     # Click on a button's text - Engage for iOS SS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    PRACTICE
-    Click On Button With Text    ${text}    engageForIOSSS\\practice.png    0.6
+    ${text}    Set Variable    PRACTICE
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\engageForIOSSS\\practice.png    0.6
 
     Check to see if the user exist
 

@@ -17,13 +17,13 @@ Validate "Engage for iOS PCS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&PCS vocabularies    ${engageForiOSPCS}
+    Select vocabulary    name:English    name:PCS     ${engageForiOSPCS}
 
 Assertions for "Engage for iOS PCS" vocabulary
     # Click on a button's text - Engage for iOS PCS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    PRACTICE
-    Click On Button With Text    ${text}    engageForIOSPCS\\practice.png    0.6
+    ${text}    Set Variable    PRACTICE
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\engageForIOSPCS\\practice.png    0.6
 
     Check to see if the user exist
 

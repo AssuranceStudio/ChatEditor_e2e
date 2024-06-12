@@ -17,13 +17,13 @@ Validate "sin sintaxis 4x4 English PCS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&PCS vocabularies    ${sinSintaxis4x4EnglishPCS}    ${page_down_button}
+    Select vocabulary    name:English    name:PCS    ${page_down_button}    ${sinSintaxis4x4EnglishPCS}
 
 Assertions for "sin sintaxis 4x4 English PCS" vocabulary
     # Click on a button's text - sin sintaxis 4x4 English PCS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    Clothing
-    Click On Button With Text    ${text}    sinSintaxis4x4EnglishPCS\\clothing.png    0.6
+    ${text}    Set Variable    Clothing
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\sinSintaxis4x4EnglishPCS\\clothing.png    0.6
 
     Check to see if the user exist
 

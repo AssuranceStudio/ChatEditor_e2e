@@ -17,13 +17,13 @@ Validate "Spelling SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix vocabularies    ${spellingSS}    ${page_down_button}
+    Select vocabulary    name:English    name:SymbolStix    ${page_down_button}    ${spellingSS}
 
 Assertions for "Spelling SS" vocabulary
     # Click on a button's text - Spelling SS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    PHRASES
-    Click On Button With Text    ${text}    spellingSS\\phrases.png    0.6
+    ${text}    Set Variable    PHRASES
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\spellingSS\\phrases.png    0.6
 
     Check to see if the user exist
 

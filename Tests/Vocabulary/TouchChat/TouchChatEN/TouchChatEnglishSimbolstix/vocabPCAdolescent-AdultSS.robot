@@ -17,13 +17,13 @@ Validate "VocabPC Adolescent-Adult SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix vocabularies    ${vocabPCAdolescent-AdultSS}    ${page_down_button}
+    Select vocabulary    name:English    name:SymbolStix    ${page_down_button}    ${vocabPCAdolescent-AdultSS}
 
 Assertions for "VocabPC Adolescent-Adult SS" vocabulary
     # Click on a button's text - VocabPC Adolescent-Adult SS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    don't want
-    Click On Button With Text    ${text}    vocabPCAdolescent-AdultSS\\don'tWant.png    0.6
+    ${text}    Set Variable    don't want
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\vocabPCAdolescent-AdultSS\\don'tWant.png    0.6
     ${message}=    RPA.Windows.Get Value    id:1000
     Should Contain    ${message}    I don't want
 

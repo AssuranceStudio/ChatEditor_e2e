@@ -17,7 +17,7 @@ Validate "Gateway 12 Child" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&Gateway vocabularies    ${gateway12Child}
+    Select vocabulary    name:English    name:SymbolStix    name:Gateway    ${gateway12Child}
 
 Assertions for "Gateway 12 Child" vocabulary
     Check to see if the user exist

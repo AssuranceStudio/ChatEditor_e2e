@@ -17,7 +17,7 @@ Validate "Gateway 40 Teen" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&Gateway vocabularies    ${gateway40Teen}
+    Select vocabulary    name:English    name:SymbolStix    name:Gateway    ${gateway40Teen}
 
 Assertions for "Gateway 40 Teen" vocabulary
     Check to see if the user exist

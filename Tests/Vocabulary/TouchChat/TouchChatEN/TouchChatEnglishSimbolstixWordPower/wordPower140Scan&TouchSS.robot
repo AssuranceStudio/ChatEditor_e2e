@@ -17,13 +17,13 @@ Validate "WordPower140 Scan & Touch SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&WordPower vocabularies    ${wordPower140Scan&TouchSS}    ${page_down_button}
+    Select vocabulary    name:English    name:SymbolStix    name:WordPower    ${page_down_button}    ${wordPower140Scan&TouchSS}
 
 Assertions for "WordPower140 Scan & Touch SS" vocabulary
     # Click on a button's text - WordPower140 Scan & Touch SS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    I
-    Click On Button With Text    ${text}    wordPower140Scan&TouchSS\\i.png    0.6
+    ${text}    Set Variable    I
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\wordPower140Scan&TouchSS\\i.png    0.6
     ${message}=    RPA.Windows.Get Value    id:1000
     Should Contain    ${message}    I
 

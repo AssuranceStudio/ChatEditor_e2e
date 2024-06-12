@@ -17,13 +17,13 @@ Validate "Spelling PCS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&PCS vocabularies    ${spellingPCS}    ${page_down_button}
+    Select vocabulary    name:English    name:PCS    ${page_down_button}    ${spellingPCS}
 
 Assertions for "Spelling PCS" vocabulary
     # Click on a button's text - Spelling PCS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    PHRASES
-    Click On Button With Text    ${text}    spellingPCS\\phrases.png    0.6
+    ${text}    Set Variable    PHRASES
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\spellingPCS\\phrases.png    0.6
 
     Check to see if the user exist
 

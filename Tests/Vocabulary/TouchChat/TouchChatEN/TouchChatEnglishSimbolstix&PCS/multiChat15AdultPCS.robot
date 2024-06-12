@@ -17,13 +17,13 @@ Validate "MultiChat 15 Adult PCS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&PCS vocabularies    ${multiChat15AdultPCS}
+    Select vocabulary    name:English    name:PCS    ${multiChat15AdultPCS}
 
 Assertions for "MultiChat 15 Adult PCS" vocabulary
     # Click on a button's text - MultiChat 15 Adult PCS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    Questions
-    Click On Button With Text    ${text}    multiChat15AdultPCS\\questions.png    0.6
+    ${text}    Set Variable    Questions
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\multiChat15AdultPCS\\questions.png    0.6
 
     Check to see if the user exist
 

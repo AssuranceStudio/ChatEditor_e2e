@@ -17,13 +17,13 @@ Validate "Gateway 20 Teen" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&Gateway vocabularies    ${gateway20Teen}
+    Select vocabulary    name:English    name:SymbolStix    name:Gateway    ${gateway20Teen}
 
 Assertions for "Gateway 20 Teen" vocabulary
     # Click on a button's text - Gateway 20 Teen
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    I
-    Click On Button With Text    ${text}    gateway20Teen\\i.png    0.6
+    ${text}    Set Variable    I
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\gateway20Teen\\i.png    0.6
     ${message}=    RPA.Windows.Get Value    id:1000
     Should Contain    ${message}    I
 

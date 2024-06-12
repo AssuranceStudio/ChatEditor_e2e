@@ -17,13 +17,13 @@ Validate "MultiChat 15 Student SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix vocabularies    ${multiChat15StudentSS}
+    Select vocabulary    name:English    name:SymbolStix    ${multiChat15StudentSS}
 
 Assertions for "MultiChat 15 Student SS" vocabulary
     # Click on a button's text - MultiChat 15 Student SS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    Questions
-    Click On Button With Text    ${text}    multiChat15StudentSS\\questions.png    0.6
+    ${text}    Set Variable    Questions
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\multiChat15StudentSS\\questions.png    0.6
 
     Check to see if the user exist
 

@@ -17,7 +17,7 @@ Validate "myCore SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix vocabularies    ${myCoreSS}
+    Select vocabulary    name:English    name:SymbolStix    ${myCoreSS}
 
 Assertions for "myCore SS" vocabulary
     Check to see if the user exist

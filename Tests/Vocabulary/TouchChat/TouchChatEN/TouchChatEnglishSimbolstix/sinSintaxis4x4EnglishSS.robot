@@ -17,7 +17,7 @@ Validate "sin sintaxis 4x4 English SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix vocabularies    ${sinSintaxis4x4EnglishSS}    ${page_down_button}
+    Select vocabulary    name:English    name:SymbolStix    ${page_down_button}    ${sinSintaxis4x4EnglishSS}
 
 Assertions for "sin sintaxis 4x4 English SS" vocabulary
     Check to see if the user exist

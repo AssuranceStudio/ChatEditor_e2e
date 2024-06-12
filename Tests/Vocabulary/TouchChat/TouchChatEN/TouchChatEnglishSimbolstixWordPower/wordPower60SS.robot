@@ -17,13 +17,13 @@ Validate "WordPower60 SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&WordPower vocabularies    ${wordPower60SS}
+    Select vocabulary    name:English    name:SymbolStix    name:WordPower    ${wordPower60SS}
 
 Assertions for "WordPower60 SS" vocabulary
     # Click on a button's text - WordPower60 SS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    PEOPLE
-    Click On Button With Text    ${text}    wordPower60SS\\people.png    0.6
+    ${text}    Set Variable    PEOPLE
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\wordPower60SS\\people.png    0.6
 
     Check to see if the user exist
 

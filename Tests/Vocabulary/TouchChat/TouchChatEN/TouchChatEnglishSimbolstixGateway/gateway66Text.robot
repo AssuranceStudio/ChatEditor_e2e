@@ -17,13 +17,13 @@ Validate "Gateway 66 Text" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&Gateway vocabularies    ${gateway66Text}    ${page_down_button}
+    Select vocabulary    name:English    name:SymbolStix    name:Gateway    ${page_down_button}    ${gateway66Text}
 
 Assertions for "Gateway 66 Text" vocabulary
     # Check to see if there is a picture of the vocabulary icons - Gateway 66 Text
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    I
-    Click On Button With Text    ${text}    gateway66Text\\i.png    0.7
+    ${text}    Set Variable    I
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\gateway66Text\\i.png    0.7
     ${message}=    RPA.Windows.Get Value    id:1000
     Should Contain    ${message}    I
 

@@ -17,13 +17,13 @@ Validate "myQuickChat 4 Child SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix vocabularies    ${myQuickChat4ChildSS}
+    Select vocabulary    name:English    name:SymbolStix    ${myQuickChat4ChildSS}
 
 Assertions for "myQuickChat 4 Child SS" vocabulary
     # Click on a button's text - myQuickChat 4 Child SS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    Quickchat 1
-    Click On Button With Text    ${text}    myQuickChat4ChildSS\\quickchat.png    0.6
+    ${text}    Set Variable    Quickchat 1
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\myQuickChat4ChildSS\\quickchat.png    0.6
 
     Check to see if the user exist
 

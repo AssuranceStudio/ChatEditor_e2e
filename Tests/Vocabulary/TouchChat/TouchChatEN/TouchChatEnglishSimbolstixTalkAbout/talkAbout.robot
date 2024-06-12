@@ -17,13 +17,13 @@ Validate "Talk-About" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select "Talk-About" vocabulary
+    Select vocabulary    name:English    name:SymbolStix    ${page_down_button}    ${talkAbout}
 
 Assertions for "Talk-About" vocabulary
     # Click on a button's text - Talk-About
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    GO BACK
-    Click On Button With Text    ${text}    talkAbout\\goBack.png    0.6
+    ${text}    Set Variable    GO BACK
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\talkAbout\\goBack.png    0.6
 
     Check to see if the user exist
 

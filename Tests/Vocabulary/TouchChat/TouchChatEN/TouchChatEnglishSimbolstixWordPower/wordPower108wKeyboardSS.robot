@@ -17,13 +17,13 @@ Validate "WordPower108 w Keyboard SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&WordPower vocabularies    ${wordPower108wKeyboardSS}    ${page_down_button}
+    Select vocabulary    name:English    name:SymbolStix    name:WordPower    ${page_down_button}    ${wordPower108wKeyboardSS}
 
 Assertions for "WordPower108 w Keyboard SS" vocabulary
     # Click on a button's text - WordPower108 w Keyboard SS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    PEOPLE
-    Click On Button With Text    ${text}    wordPower108wKeyboardSS\\people.png    0.6
+    ${text}    Set Variable    PEOPLE
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\wordPower108wKeyboardSS\\people.png    0.6
 
     Check to see if the user exist
 

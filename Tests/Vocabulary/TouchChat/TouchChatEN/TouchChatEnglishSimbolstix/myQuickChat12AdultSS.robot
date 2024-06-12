@@ -17,13 +17,13 @@ Validate "myQuickChat 12 Adult SS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix vocabularies    ${myQuickChat12AdultSS}    ${page_down_button}
+    Select vocabulary    name:English    name:SymbolStix    ${page_down_button}    ${myQuickChat12AdultSS}
 
 Assertions for "myQuickChat 12 Adult SS" vocabulary
     # Click on a button's text - myQuickChat 12 Adult SS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    Quickchat 1
-    Click On Button With Text    ${text}    myQuickChat12AdultSS\\quickchat1.png    0.6
+    ${text}    Set Variable    Quickchat 1
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\myQuickChat12AdultSS\\quickchat1.png    0.6
 
     Check to see if the user exist
 

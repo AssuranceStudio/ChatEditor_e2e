@@ -17,13 +17,13 @@ Validate "Communication Journey Aphasia PCS" vocabulary
     Create English user
     Maximize the window
     Reach Library of vocabs
-    Select TouchChatEnglishSimbolstix&PCS vocabularies    ${communicationJourneyAphasiaPCS}
+    Select vocabulary    name:English    name:PCS    ${communicationJourneyAphasiaPCS}
 
 Assertions for "Communication Journey Aphasia PCS" vocabulary
     # Click on a button's text - Communication Journey Aphasia PCS
     Set Resolution    ${window}    1800    800
-    ${text}=    Set Variable    Things
-    Click On Button With Text    ${text}    CommunicationJourneyAphasiaPCS\\things.png    0.6
+    ${text}    Set Variable    Things
+    Click On Button With Text    ${text}    TouchChat\\TouchChatEnglish\\CommunicationJourneyAphasiaPCS\\things.png    0.6
 
     Check to see if the user exist
 
