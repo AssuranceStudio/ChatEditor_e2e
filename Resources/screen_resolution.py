@@ -29,6 +29,7 @@ def set_resolution(window_title, width, height):
 
 # Define the keyword used to click on the button with the specified text
 def click_on_button_with_text(text, image, conf):
+    # image_path = 'E:\\PRC\\git\\ChatEditorRobot\\images\\vocabularies\\TouchChat\\TouchChatEnglish\\' + image
     image_path = 'E:\\Git\\e2e_chat_editor_robot\\images\\vocabularies\\TouchChat\\TouchChatEnglish\\' + image
     # Find all positions on the screen where the specified text is located.
     button_positions = list(pyautogui.locateAllOnScreen(image_path, grayscale=True, confidence=conf))
